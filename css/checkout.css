@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Roboto:wght@300&display=swap);
+
+* {
+    font-family: Roboto, Cairo, sans-serif;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: all .3s
+}
+
+#checkout {
+    border: red solid 3px
+}
+
+#checkout article {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+#name::before {
+    content: "name : "
+}
+
+#price::before {
+    content: "price : "
+}
+
+#total::before {
+    content: "total : "
+}
+
+#sum::before {
+    content: "sum : "
+}
+
+.payment h1 {
+    text-align: center;
+    padding: 12px
+}
+
+.payment>div {
+    text-align: center;
+    padding: 8px;
+    width: 480px;
+    border-radius: 10px
+}
+
+.payment .logo-pay {
+    border: none !important
+}
+
+#img {
+    border-radius: 20px
+}
+
+.payment .logo-pay img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border-radius: 20px
+}
+
+.payment div div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #066bee solid 2px;
+    border-radius: 8px;
+    margin: 4px
+}
+
+.payment div div input {
+    border-radius: 8px;
+    padding: 8px;
+    margin: 3px
+}
+
+.payment div div input:hover {
+    background-color: #dce6f0;
+    border: #066bee solid 2px
+}
+
+.payment div button {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #fff;
+    cursor: no-drop;
+    width: 200px
+}
+
+.payment div button:hover {
+    box-shadow: 0 0 10px #2b2b2b;
+    background-color: #e74c4c;
+    color: #fff
+}
+
+.payment div button i {
+    font-size: 2rem;
+    color: #066bee
+}

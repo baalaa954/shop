@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth
+}
+
+* {
+    font-family: Roboto, Cairo, sans-serif;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: all .3s
+}
+
+a,
+a:visited {
+    color: #4169e1
+}
+
+ul {
+    padding: 0;
+    margin: 0
+}
+
+.click-button {
+    padding: 12px;
+    margin: 12px;
+    cursor: pointer;
+    background-color: #3e7eb9;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 15px;
+    transition: all .3s;
+    letter-spacing: 1px
+}
+
+.click-button:hover {
+    background-color: #4374a1ce;
+    box-shadow: 0 0 20px #eea047;
+    font-size: 14px
+}
+
+.title {
+    padding: 12px;
+    width: 300px;
+    display: inline-block;
+    border: #312663 solid 3px;
+    border-radius: 10px;
+    background-color: #312663;
+    color: #fff
+}
+
+body {
+    width: 90vw;
+    padding: 12px;
+    margin: 0 auto;
+    background-color: #e3e6f3
+}
+
+body>* {
+    margin: 20px 0;
+    padding: 2rem;
+    border: #312663 solid 2px;
+    border-radius: 7px
+}
+
+body>:hover {
+    border-radius: 15px;
+    box-shadow: 0 0 15px 3px #483d77
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #e3e6f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px
+}
+
+header .logo {
+    border-radius: 50%
+}
+
+header nav ul li {
+    padding: 8px;
+    display: inline;
+    transition: all .3s;
+    cursor: pointer;
+    font-weight: 400
+}
+
+header>nav>ul>li:hover {
+    color: #4682b4;
+    font-size: 18px;
+    box-shadow: 0 0 5px #b6b6b6 inset;
+    border-radius: 10px
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block
+}
+
+.dropdown ul li a {
+    font-size: 14px !important;
+    padding: 2px;
+    display: block
+}
+
+.dropdown>ul>li>a:hover {
+    font: 400 14px;
+    border-bottom: #312663 solid 1px
+}
+
+.show {
+    position: absolute;
+    top: 40px;
+    border-radius: 10px;
+    padding: 4px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 150px;
+    box-shadow: 0 0 10px #e3e6f3;
+    z-index: 1
+}
+
+.dropdown:hover .show {
+    display: block
+}
+
+#categories {
+    border: #312663 solid 2px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+#categories .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#categories .menu li a {
+    position: relative;
+    padding: .5rem 1rem;
+    margin: 8px
+}
+
+.sub-menu {
+    border-radius: 12px;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    width: 180px
+}
+
+#categories .menu li:hover .sub-menu {
+    display: block;
+    z-index: 1
+}
+
+#categories .menu li:hover .sub-menu li {
+    padding: 8px 0;
+    font-size: 16px
+}
+
+#categories .menu li:hover .sub-menu li:hover {
+    border-bottom: #413c3c solid 1px
+}
+
+#start {
+    height: 600px;
+    background-image: url(../images/logo/back.png);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#start div {
+    font-size: larger;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    max-width: 350px
+}
+
+#shop {
+    text-align: center
+}
+
+#shop article .product {
+    display: inline-block;
+    width: 300px;
+    margin: 1rem;
+    text-align: center;
+    border: #4682b4 solid 2px;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+#shop article .product:hover {
+    box-shadow: 0 0 15px #333;
+    border: #312663 solid 2px
+}
+
+#shop>article .product div img {
+    width: 100%
+}
+
+#shop article .head {
+    margin: 0 2%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4f3da0;
+    color: #fff;
+    border-radius: 30px
+}
+
+#shop article .head button {
+    padding: 12px;
+    margin: 12px;
+    background-color: #3e7eb9;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 15px;
+    transition: all .3s;
+    letter-spacing: 1px
+}
+
+#shop .product {
+    text-align: center;
+    border: red solid 3px
+}
+
+#shop .product .name-product {
+    display: flex;
+    justify-content: space-around
+}
+
+#shop article .product .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px
+}
+
+#shop article .product .button button {
+    width: 120px;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #312663;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 12px
+}
+
+#shop article .product .button button:hover {
+    background-color: #eb4242;
+    color: #fff;
+    box-shadow: 0 0 10px #000
+}
+
+#shop article .product .button button:first-child::before {
+    content: "$"
+}
+
+#featured .featured {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem
+}
+
+#featured .featured div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 220px;
+    min-height: 200px;
+    border: #6a5acd solid 2px;
+    border-radius: 7px;
+    transition: all .4s
+}
+
+#featured .featured div:hover {
+    border-radius: 7px;
+    box-shadow: 0 0 10px #8e10b5;
+    min-width: 223px;
+    min-height: 215px;
+    transform: rotate(1deg)
+}
+
+#featured div img {
+    width: 130px;
+    height: 110px
+}
+
+#featured .about {
+    position: relative;
+    top: 30px;
+    display: flex
+}
+
+#featured .about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%
+}
+
+#featured .about div img {
+    width: 400px;
+    height: 400px;
+    border-radius: 40%
+}
+
+#featured .about div p {
+    letter-spacing: 1px;
+    font-weight: 400
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#content div {
+    margin: 0 20px
+}
+
+#content div img {
+    width: 400px;
+    border-radius: 40%
+}
+
+#content div form * {
+    width: 350px;
+    display: block;
+    margin: 8px;
+    padding: 12px;
+    background-color: #cfced6;
+    border-radius: 8px;
+    resize: none
+}
+
+#content div form :hover {
+    background-color: #b6b3cc
+}
+
+#review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem
+}
+
+#review article {
+    padding: 12px;
+    width: 300px;
+    height: 450px;
+    border: #8e10b5 solid 2px;
+    border-radius: 20px;
+    background-color: #ffffff31;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+#review article .star {
+    font-size: 1.1rem;
+    color: #9fa100;
+    transition: all .3s ease-in-out
+}
+
+#review article:hover .star {
+    color: #4682b4;
+    font-size: 1.3rem
+}
+
+#review article img {
+    width: 130px;
+    border: #8e10b5 solid 2px;
+    border-radius: 50%
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem
+}
+
+footer div ul li {
+    margin: 6px 0;
+    width: 140px
+}
+
+footer div ul li:hover {
+    border-bottom: #312663 solid 1px;
+    transform: translateX(5px)
+}
+
+footer div {
+    width: 200px
+}
